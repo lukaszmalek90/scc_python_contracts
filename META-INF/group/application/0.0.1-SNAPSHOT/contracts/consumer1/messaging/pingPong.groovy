@@ -21,11 +21,11 @@ Contract.make {
                connectToBroker: [
                    additionalOptions: "",
                    declareQueueWithName: "queue"
-               ]
-           ],
-            messageProperties: [
-                receivedRoutingKey: '#'
-            ]
+               ],
+                messageProperties: [
+                    receivedRoutingKey: '#'
+                ]
+           ]
          ]
         ])
 }
