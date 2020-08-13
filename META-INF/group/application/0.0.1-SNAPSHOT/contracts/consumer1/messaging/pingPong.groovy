@@ -14,4 +14,18 @@ Contract.make {
             message: 'pong'
         ])
     }
+    metadata(
+        [amqp:
+         [
+           outputMessage: [
+               connectToBroker: [
+                   additionalOptions: "",
+                   declareQueueWithName: "queue"
+               ]
+           ],
+            messageProperties: [
+                receivedRoutingKey: '#'
+            ]
+         ]
+        ])
 }
