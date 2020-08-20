@@ -15,7 +15,12 @@ Contract.make {
         ])
     }
     metadata(
-        [amqp:
+        [withMiddleware:
+            protocol: "google-pubsub"
+            
+            
+            
+            ,amqp:
          [
            outputMessage: [
                connectToBroker: [
