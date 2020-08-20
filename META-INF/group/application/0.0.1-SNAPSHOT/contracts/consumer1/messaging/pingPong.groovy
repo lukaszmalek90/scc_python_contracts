@@ -15,12 +15,6 @@ Contract.make {
         ])
     }
     metadata(
-        [withMiddleware:
-            protocol: "google-pubsub"
-            
-            
-            
-            ,amqp:
          [
            outputMessage: [
                connectToBroker: [
@@ -31,6 +25,5 @@ Contract.make {
                     receivedRoutingKey: '#'
                 ]
            ]
-         ]
-        ])
+         ])
 }
