@@ -1,5 +1,5 @@
 description: 'Send a pong message in response to a ping message'
-label: 'ping_pong'
+label: 'standalone_ping_pong'
 input:
   triggeredBy: 'triggerMessage("ping_pong")'
 outputMessage:
