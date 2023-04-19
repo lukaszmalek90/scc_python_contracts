@@ -17,7 +17,7 @@ Contract.make {
         ])
     }
     metadata(
-        [
+        [amqp:
          [
            outputMessage: [
                connectToBroker: [
