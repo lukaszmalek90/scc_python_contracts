@@ -1,15 +1,15 @@
-# description: 'Send a pong message in response to a ping message'
-# label: 'standalone_ping_pong'
-# input:
-#   triggeredBy: 'triggerMessage("ping_pong")'
-# outputMessage:
-#   sentTo: 'rabbitmq:output'
-#   body:
-#     message: 'pong'
-# metadata:
-#   standalone:
-#     setup:
-#       options: rabbitmq:output?queue=output&routingKey=#
-#     outputMessage:
-#       additionalOptions: routingKey=#&queue=output
-# Commenting out for now, as this is another use case scenario described here: https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/docker-project.html#docker-middleware-standalone
+ description: 'Send a pong message in response to a ping message'
+ label: 'standalone_ping_pong'
+ input:
+   triggeredBy: 'triggerMessage("ping_pong")'
+ outputMessage:
+   sentTo: 'rabbitmq:output'
+   body:
+     message: 'pong'
+ metadata:
+   standalone:
+     setup:
+       options: rabbitmq:output?queue=output&routingKey=#
+     outputMessage:
+       additionalOptions: routingKey=#&queue=output
+#This is another use case scenario described here: https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/docker-project.html#docker-middleware-standalone
