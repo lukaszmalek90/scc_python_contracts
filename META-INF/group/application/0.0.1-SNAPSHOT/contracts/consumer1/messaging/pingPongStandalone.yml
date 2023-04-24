@@ -17,10 +17,7 @@ metadata:
           clientId: my-client
           queue: topic
           routingKey: "#"
-#        options:
-#          queue: topic
-#          routingKey: "#"
-#    outputMessage:
-#      additionalOptions:
-#        routingKey: "#"
-#        queue: topic
+    outputMessage:
+      additionalOptions:
+        routingKey: "#"
+        queue: topic
