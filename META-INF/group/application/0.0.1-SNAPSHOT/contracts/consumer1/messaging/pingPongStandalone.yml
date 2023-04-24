@@ -11,7 +11,7 @@ metadata:
   standalone:
     setup:
       endpoint:
-        uri: paho:topic?brokerUrl=tcp://localhost:1883
+        uri: paho:topic?brokerUrl=tcp://localhost:9001
         type: paho
         options:
           queue: topic
