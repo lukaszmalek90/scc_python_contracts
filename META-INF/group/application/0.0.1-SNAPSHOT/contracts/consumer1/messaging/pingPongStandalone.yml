@@ -11,8 +11,12 @@ metadata:
   standalone:
     setup:
       endpoint:
-        uri: paho:topic
+        uri: paho:topic?brokerUrl=tcp://localhost:1883&clientId=my-client
         type: paho
+        options:
+          clientId: my-client
+          queue: topic
+          routingKey: "#"
 #        options:
 #          queue: topic
 #          routingKey: "#"
