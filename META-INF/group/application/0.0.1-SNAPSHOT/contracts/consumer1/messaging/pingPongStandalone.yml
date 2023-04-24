@@ -1,15 +1,21 @@
- description: 'Send a pong message in response to a ping message'
- label: 'standalone_ping_pong'
- input:
-   triggeredBy: 'triggerMessage("ping_pong")'
- outputMessage:
-   sentTo: 'paho:topic'
-   body:
-     message: 'pong'
- metadata:
-   standalone:
-     setup:
-       options: rabbitmq:output?queue=output&routingKey=#
-     outputMessage:
-       additionalOptions: routingKey=#&queue=output
-#This is another use case scenario described here: https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/docker-project.html#docker-middleware-standalone
+description: 'Send a pong message in response to a ping message'
+label: 'standalone_ping_pong'
+input:
+  triggeredBy: 'triggerMessage("ping_pong")'
+outputMessage:
+  sentTo: 'paho:topic'
+  body:
+    message: 'pong'
+metadata:
+  standalone:
+    setup:
+      endpoint:
+        uri: 'paho:topic?brokerUrl=tcp://localhost:1883'
+        type: 'paho'
+        options:
+          queue: 'topic'
+          routingKey: '#'
+    outputMessage:
+      additionalOptions:
+        routingKey: '#'
+        queue: 'topic'
