@@ -4,7 +4,7 @@ label: standalone_ping_pong
 input:
   triggeredBy: triggerMessage("ping_pong")
 outputMessage:
-  sentTo: paho:topic
+  sentTo: topic
   body:
     message: pong
 metadata:
