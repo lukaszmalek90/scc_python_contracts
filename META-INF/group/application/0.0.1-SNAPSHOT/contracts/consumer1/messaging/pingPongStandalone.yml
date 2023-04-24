@@ -16,4 +16,4 @@ metadata:
         options:
           clientId: my-client
     outputMessage:
-      additionalOptions: routingKey=#queue=topic
+      additionalOptions: adresses=tcp://host.docker.internal:1883
