@@ -1,21 +1,22 @@
-description: 'Send a pong message in response to a ping message'
-label: 'standalone_ping_pong'
+---
+description: Send a pong message in response to a ping message
+label: standalone_ping_pong
 input:
-  triggeredBy: 'triggerMessage("ping_pong")'
+  triggeredBy: triggerMessage("ping_pong")
 outputMessage:
-  sentTo: 'paho:topic'
+  sentTo: paho:topic
   body:
-    message: 'pong'
+    message: pong
 metadata:
   standalone:
     setup:
       endpoint:
-        uri: 'paho:topic?brokerUrl=tcp://localhost:1883'
-        type: 'paho'
+        uri: paho:topic?brokerUrl=tcp://localhost:1883
+        type: paho
         options:
-          queue: 'topic'
-          routingKey: '#'
+          queue: topic
+          routingKey: "#"
     outputMessage:
       additionalOptions:
-        routingKey: '#'
-        queue: 'topic'
+        routingKey: "#"
+        queue: topic
