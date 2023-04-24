@@ -16,4 +16,4 @@ metadata:
         options:
           clientId: my-client
     outputMessage:
-      additionalOptions: adresses=tcp://host.docker.internal:1883
+      additionalOptions: brokerUrl=tcp://host.docker.internal:1883
