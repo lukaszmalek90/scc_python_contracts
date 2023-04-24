@@ -10,4 +10,4 @@ outputMessage:
 metadata:
   standalone:
     outputMessage:
-      additionalOptions: brokerUrl=tcp://localhost:1883
+      additionalOptions: brokerUrl=tcp://host.docker.internal:1883
