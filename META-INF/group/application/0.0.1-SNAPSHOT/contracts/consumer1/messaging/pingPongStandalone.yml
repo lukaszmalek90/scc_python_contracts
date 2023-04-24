@@ -9,11 +9,5 @@ outputMessage:
     message: pong
 metadata:
   standalone:
-    setup:
-      endpoint:
-        uri: paho:topic?brokerUrl=tcp://host.docker.internal:1883&clientId=my-client
-        type: paho
-        options:
-          clientId: my-client
     outputMessage:
       additionalOptions: brokerUrl=tcp://localhost:1883
