@@ -15,9 +15,5 @@ metadata:
         type: paho
         options:
           clientId: my-client
-          queue: topic
-          routingKey: "#"
     outputMessage:
-      additionalOptions:
-        routingKey: "#"
-        queue: topic
+      additionalOptions: routingKey=#queue=topic
