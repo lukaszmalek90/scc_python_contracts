@@ -3,7 +3,7 @@
  input:
    triggeredBy: 'triggerMessage("ping_pong")'
  outputMessage:
-   sentTo: 'rabbitmq:output'
+   sentTo: 'paho:topic'
    body:
      message: 'pong'
  metadata:
