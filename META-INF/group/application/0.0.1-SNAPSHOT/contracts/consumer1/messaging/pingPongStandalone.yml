@@ -11,7 +11,7 @@ metadata:
   standalone:
     setup:
       endpoint:
-        uri: paho:topic?brokerUrl=tcp://test.mosquitto.org
+        uri: paho:topic?brokerUrl=tcp://localhost:1883
         type: paho
         options:
           queue: topic
