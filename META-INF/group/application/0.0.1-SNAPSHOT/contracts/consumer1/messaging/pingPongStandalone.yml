@@ -4,7 +4,7 @@ label: standalone_ping_pong
 input:
   triggeredBy: triggerMessage("ping_pong")
 outputMessage:
-  sentTo: topic
+  sentTo: paho:topic
   body:
     message: pong
 metadata:
@@ -13,9 +13,9 @@ metadata:
       endpoint:
         uri: paho:topic?brokerUrl=tcp://localhost:9001
         type: paho
-        options:
-          queue: topic
-          routingKey: "#"
+#        options:
+#          queue: topic
+#          routingKey: "#"
 #    outputMessage:
 #      additionalOptions:
 #        routingKey: "#"
