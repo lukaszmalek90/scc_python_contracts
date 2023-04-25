@@ -1,6 +1,6 @@
 ---
 description: Send a pong message in response to a ping message
-label: standalone_ping_pong
+label: ping_pong
 input:
   triggeredBy: triggerMessage("ping_pong")
 outputMessage:
