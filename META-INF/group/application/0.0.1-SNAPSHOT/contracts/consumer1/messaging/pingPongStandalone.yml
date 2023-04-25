@@ -11,5 +11,5 @@ metadata:
   standalone:
     setup:
       options: paho:example_topic?brokerUrl=tcp://host.docker.internal:1883
-#    outputMessage:
-#      additionalOptions: brokerUrl=http://host.docker.internal:1883
+    outputMessage:
+      additionalOptions: brokerUrl=tcp://host.docker.internal:1883
