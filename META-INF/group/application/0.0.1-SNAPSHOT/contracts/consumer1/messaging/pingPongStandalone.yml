@@ -10,6 +10,6 @@ outputMessage:
 metadata:
   standalone:
     setup:
-      options: paho:example_topic?brokerUrl=http://host.docker.internal:1883
+      options: paho:example_topic?brokerUrl=tcp://host.docker.internal:1883
 #    outputMessage:
 #      additionalOptions: brokerUrl=http://host.docker.internal:1883
