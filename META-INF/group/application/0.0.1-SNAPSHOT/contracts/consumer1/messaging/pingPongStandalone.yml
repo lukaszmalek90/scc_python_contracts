@@ -10,4 +10,4 @@ outputMessage:
 metadata:
   standalone:
     outputMessage:
-      additionalOptions: brokerUrl=host.docker.internal
+      additionalOptions: brokerUrl=tcp://host.docker.internal
